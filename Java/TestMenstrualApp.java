@@ -54,4 +54,20 @@ public class TestMenstrualApp {
    }
 
 
+
+    @Test
+    public void testForWhenOvulationDayOccurs() {
+        // Arrange
+        LocalDate lastPeriodStart = LocalDate.of(2025, 8, 1);
+    int averageCycleLength = 28;
+    MenstrualApp app = new MenstrualApp();
+
+    // Act
+    LocalDate result = app.calculateOvulationDay(lastPeriodStart, averageCycleLength);
+
+    // Assert (28 - 14 = 14, so ovulation on Aug 15)
+    assertEquals(LocalDate.of(2025, 8, 15), result);
+}
+
+
 }
