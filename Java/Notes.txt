@@ -1,0 +1,39 @@
+//Notes to self
+/*
+The menstrual cycle is the monthly process the female body goes through to prepare for a possible pregnancy. Counted from day one of menstrual bleeding up to the day before the next period starts again...
+lasts from 21 to 35 days, average of 28 days.
+**Menstrual phase(Days 1 - 5 approximately).
+**Follicular phase(Day 1 - 13 approximately).
+**Ovulation phase(around day 14 in an average cycle (28)) and day 16 in a 30 days cycle.
+**Luteal phase(Day 15 - 28 approximately)
+fertile window ~ 5days <= ovulation day
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Example(for 28 days cycle)
+period - Aug 1 - 5;
+Fertile window - August 10 - 15
+Ovulation - August 14 - 15
+Next period - August 29
+...excluding many other factors that may affect the cycle
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+My app would should ask for last period date and average cycle length
+Estimate ovulation by subtracting 14 days from the expected next period
+Calculate fertile window = ovulation - 5 
+Show less fertile as the estimated safe and maybe i add a warning too
+I can educate users with notes like: 
+        "Your fertile window is estimated, not exact"
+        "Irregular cycles reduce accuracy fertile window is estimated, not exact"
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+LMP (Last Menstrual Period): First day of the last bleeding.
+FSH: Hormone that grows egg follicles.
+LH surge: Triggers ovulation.
+Corpus luteum: Hormone-secreting body after ovulation.
+Endometrium: Uterine lining.
+Fertile Window: Best days for conception.
+Safe Period: Days outside fertile window (estimated).
+*/
