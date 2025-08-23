@@ -36,4 +36,22 @@ public class TestMenstrualApp {
         assertEquals(LocalDate.of(2023, 8, 15), result);
     }
 
+
+
+    @Test
+    public void TestForWhenFertileWindowStartsAndEnds() {
+        // Arrange
+        MenstrualApp app = new MenstrualApp();
+        LocalDate lastPeriodStart = LocalDate.of(2023, 1, 1);
+        int averageCycleLength = 28;
+
+        // Act
+        LocalDate[] fertileWindow = app.calculateFertileWindow(lastPeriodStart, averageCycleLength);
+
+        // Assert (fertile window is usually 5 days before ovulation + ovulation day)
+        assertEquals(LocalDate.of(2023, 1, 10), fertileWindow[0]);
+        assertEquals(LocalDate.of(2023, 1, 15), fertileWindow[1]);
+   }
+
+
 }
