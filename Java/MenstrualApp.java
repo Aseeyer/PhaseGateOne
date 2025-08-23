@@ -12,4 +12,15 @@ public class MenstrualApp {
         return nextPeriod.minusDays(14);
     }
 
+
+
+    public LocalDate[] calculateFertileWindow(LocalDate lastPeriodStart, int averageCycleLength) {
+    LocalDate ovulationDay = lastPeriodStart.plusDays(averageCycleLength - 14);
+
+    LocalDate fertileStart = ovulationDay.minusDays(5);
+    LocalDate fertileEnd = ovulationDay;
+
+    return new LocalDate[]{fertileStart, fertileEnd};
+    }
+
 }
