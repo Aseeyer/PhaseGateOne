@@ -23,4 +23,11 @@ public class MenstrualApp {
     return new LocalDate[]{fertileStart, fertileEnd};
     }
 
+
+
+    public LocalDate calculateOvulationDay(LocalDate lastPeriodStart, int averageCycleLength) {
+    // Ovulation usually happens 14 days before next period
+    return lastPeriodStart.plusDays(averageCycleLength - 14);
+}
+
 }
